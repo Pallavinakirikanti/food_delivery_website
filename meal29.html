@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            margin:0;
+            padding: 0;
+            border: 0;
+        }
+        header{
+            
+            height: 100px;
+            width: 1412px;
+            display:flex; 
+            box-shadow: 3px 3px 15px rgba(197, 192, 192, 0.619);
+            position:fixed;
+            background-color: white;
+            
+        }
+        button{
+            height: 40px;
+            width:90px;
+            border-radius: 10px;
+            border:1px solid rgb(255, 251, 251);
+            background-color: transparent;
+            margin-top: 25px;
+            color: rgb(95, 91, 91);
+            font-size: 17px;
+            
+        }
+        .dropdown{
+            height: 40px;
+            width:110px;
+            margin-top:25px;
+            background-color: transparent;
+            border: 1px solid rgb(255, 251, 251) ;
+            color: rgba(255, 0, 0, 0.674);
+            font-size: 17px;
+        }
+        .img1{
+            margin-left: 100px;
+            margin-top: 20px;
+            width: 200px;
+            height: 50px;
+        }
+        p{
+            margin-left: 40px;
+            margin-top: 36px;
+            color: rgb(95, 91, 91);
+            font-size: 17px;
+        }
+        button:hover{
+            background-color: rgba(209, 206, 206, 0.242);
+        }
+        .magnify{
+            margin-left: 400px;
+        }
+        .three1 p:hover{
+            color:rgba(255, 0, 47, 0.874);
+            transition: all 1s ease;
+        }
+        .fa-brands:hover{
+            color:cornflowerblue;
+            transition: all 1s ease;
+        }
+        .three2 .input:hover{
+            border: 1px solid orange;
+        }
+        .input{
+            border:1px solid rgba(143, 138, 138, 0)
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.svg" class="img1" alt="meals">
+        <p>deliver to:</p>
+        <select class="dropdown">
+            <option>hyderabad</option>
+            <option>mumbai</option>
+            <option>kolkata</option>
+            <option>delhi</option>
+            <option>bengulur</option>
+            <option>chenni</option>
+            <option>andhra pradesh</option>
+        </select>
+        <button class="magnify">
+            <i class="fas fa-magnifying-glass" style="color: #111212;"></i>
+            search
+        </button>
+        <button class="offer" style="margin-left: 20px;">offers</button>
+        <button class="phone" style="width: 50px; margin-left: 20px;">
+            <i class="fa-solid fa-phone"></i>
+        </button>
+        <button class="user" style="width: 50px; margin-left: 20px;">
+            <i class="fas fa-user-plus"></i>
+        </button>
+        <button class="cart" style="height: 40px; width: 60px; margin-left: 20px; background-color: rgba(209, 206, 206, 0.242); border-radius: 0;">
+            <i class="fas fa-cart-shopping"></i>
+        </button>
+    </header>
+    <div style="display: flex;">
+        <div>
+            <img src="meal30.jpeg" width="600" height="400" style="position:absolute;top:130px;margin-left: 100px;" alt="food">
+        </div>
+        <div class="meals">
+            <h2 style="position:absolute;top:110px;left:750px;color:rgb(114, 112, 112)">Creamy Eggs n Chicken Brekkie</h2>
+            <img src="non-veg.jpg" width="15px" height="15px" alt="meals" style="position: absolute; top:176px;left:750px">
+            <p style="position: absolute; top:140px;left:730px;font-size:13px">MEXICAN</p>
+            <i class="fa-solid fa-indian-rupee-sign" style="margin-left:750px; margin-top: 210px; color: rgba(0, 0, 0, 0.68);">199</i>
+            <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 750px;margin-top: 10px;">ADD<sup>+</sup></button>
+            <p style="margin-top: 5px; margin-left: 770px; font-size: 13px;">Customisable</p>
+            <h3 style="margin-top: 10px; margin-left: 750px; color:rgb(114, 112, 112)">DETAILS ABOUT THIS MEAL</h3>
+            <p style="margin-top: 5px; margin-left: 750px;">A satisfying and protein-packed bowl featuring chopped boiled eggs, tender herb grilled pulled chicken simmered in a creamy béchamel sauce, hearty baked beans, and toasted whole wheat bread. Garnished with fresh parsley.</p><br>
+            <i class="fa-solid fa-drumstick-bite" style="margin-top: 5px; margin-left: 750px; font-size: 25px;"></i>
+            <p style="margin-top: 8px; margin-left: 750px;">Veg</p>
+            <i class="fa-brands fa-facebook" style="font-size: 35px; margin-left: 100px; margin-top: 15px; color:rgb(5, 42, 110)"></i>
+            <i class="fa-brands fa-twitter" style="font-size: 35px; margin-left: 15px;margin-top: 15px; color:rgb(110, 156, 241)"></i>
+            <i class="fa-brands fa-square-instagram" style="font-size: 35px; margin-left: 15px;margin-top: 15px; color:rgba(193, 36, 120, 0.658) "></i>
+            <h3 style="margin-top: 10px; margin-left: 750px; color:rgb(114, 112, 112)">INGREDIENTS</h3>
+            <p style="margin-top: 10px; margin-left: 750px; color:rgb(114, 112, 112)">Boiled Eggs, Baked Beans, Herb Grilled Pulled Chicken, Bechamel Sauce, Herbs, Garlic Toast</p>
+        </div>
+    </div><br><br><br><br><br><br><br><hr>
+    <div style="display:flex; color: rgba(172, 166, 166, 0.817);">
+        <div style="width:150px; height: 250px;margin-left:50px; " class="three1">
+            <p style="font-size: 18px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color:rgba(173, 166, 166, 0.831)">company</p>
+            <p>FAQ</p>
+            <p>About</p>
+            <p>Careers</p>
+            <p>Blog</p>
+        </div>
+        <div style="width:200px; height:250px;margin-left:20px;" class="three1">
+            <p style="font-size: 18px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color:rgba(173, 166, 166, 0.831)">Help & Contact</p>
+            <p><i class="fa-solid fa-phone"></i>080-0420-9890</p>
+            <p><i class="fa-regular fa-envelope"></i>Email us</p>
+        </div>
+        <div style="width:200px; height:250px; margin-left:20px;" class="three1">
+            <p style="font-size: 20px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color:rgba(173, 166, 166, 0.831)">more from us</p>
+            <p>bulk/party orders</p>
+            <p>cake order</p>
+            <p>Freshclub</p>
+            <p>offers</p>
+        </div>
+        <div style="width:500px; height:250px; margin-left:250px;" class="three2">
+            <p style="margin-left: 30px;">Subscribe to our droolworthy newsletter</p>
+            <input class="input" type="email" placeholder="Enter your Email" style="width:423px;height:40px;margin-left:30px;border-radius:5px;background-color: rgba(223, 218, 218, 0.422);"><br><br><br><br><br>
+            <img src="google.jpg" width="150px" height="40px" style="margin-left: 30px;" alt="hello">
+            <img src="google1.svg" width="150px" height="40px" alt="hi">
+            <i class="fa-brands fa-facebook" style="font-size: 25px; margin-left: 15px; position: absolute; top:1020px;left:1220px"></i>
+            <i class="fa-brands fa-twitter" style="font-size: 25px; margin-left: 5px; position: absolute; top:1020px;left:1270px"></i>
+            <i class="fa-brands fa-square-instagram" style="font-size: 25px; margin-left: 5px; position: absolute; top:1020px;left:1310px"></i>
+        </div> 
+          
+    </div><br><br><br>
+    <label style="margin-left: 90px; font-size: 17px; text-decoration: bold; ">Terms </label>
+    <label style="margin-left:30px;font-size: 17px; text-decoration: bold;">Privacy</label> <br><br>
+    <div style="background-color: rgba(9, 9, 9, 0.74); width: 100%; height: 350px; display: flex;">
+        <div style="width:150px;height: 200px;margin-left: 50px; display: flow-root;  color: white;">
+            <h4 style="margin-top: 25px;">CATEGORIES</h4><br>
+            <label style="margin-left: 15px; color: rgb(133, 132, 132);">Mains</label><br><br>
+            <label style="margin-left: 15px; color: rgb(133, 132, 132);">Pizzas</label><br><br>
+            <label style="margin-left: 15px; color: rgb(133, 132, 132);">Salds</label><br><br>
+            <label style="margin-left: 15px; color: rgb(133, 132, 132);">Desserts</label><br><br>
+            <label style="margin-left: 15px; color: rgb(133, 132, 132);">Quickbites</label>
+        </div>
+        <div style="width:150px;height: 200px;margin-left: 80px; display: flow-root;  color: white;">
+            <h4 style="margin-top: 25px;">CUISINES</h4><br>
+            <label style="margin-left: 15px; color: rgb(133, 132, 132);">Indian</label><br><br>
+            <label style="margin-left: 15px; color: rgb(133, 132, 132);">Chinese</label><br><br>
+            <label style="margin-left: 15px; color: rgb(133, 132, 132);">Italian</label><br><br>
+            <label style="margin-left: 15px; color: rgb(133, 132, 132);">American</label><br><br>
+            
+        </div>
+        <div style="width:150px;height: 200px;margin-left: 10px; display: flow-root;  color: white;margin-top: 80px;">
+            
+            <label style="margin-left: 15px; color: rgb(133, 132, 132);">Mexican</label><br><br>
+            <label style="margin-left: 15px; color: rgb(133, 132, 132);">Thai</label><br><br>
+            <label style="margin-left: 15px; color: rgb(133, 132, 132);">Continental</label><br><br>
+            <label style="margin-left: 15px; color: rgb(133, 132, 132);">Mediterranean</label><br><br>
+            
+        </div>
+    </div>
+</body>
+</html>

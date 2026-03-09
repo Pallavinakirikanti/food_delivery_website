@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            margin:0;
+            padding: 0;
+            border: 0;
+        }
+        header{
+            
+            height: 100px;
+            width: 1412px;
+            display:flex; 
+            box-shadow: 3px 3px 15px rgba(197, 192, 192, 0.619);
+            position:fixed;
+            background-color: white;
+            
+        }
+        button{
+            height: 40px;
+            width:90px;
+            border-radius: 10px;
+            border:1px solid rgb(255, 251, 251);
+            background-color: transparent;
+            margin-top: 25px;
+            color: rgb(95, 91, 91);
+            font-size: 17px;
+            
+        }
+        .dropdown{
+            height: 40px;
+            width:110px;
+            margin-top:25px;
+            background-color: transparent;
+            border: 1px solid rgb(255, 251, 251) ;
+            color: rgba(255, 0, 0, 0.674);
+            font-size: 17px;
+        }
+        .img1{
+            margin-left: 100px;
+            margin-top: 20px;
+            width: 200px;
+            height: 50px;
+        }
+        p{
+            margin-left: 40px;
+            margin-top: 36px;
+            color: rgb(95, 91, 91);
+            font-size: 17px;
+        }
+        button:hover{
+            background-color: rgba(209, 206, 206, 0.242);
+        }
+        .magnify{
+            margin-left: 400px;
+        }
+        .one{
+            display:flex;
+            width:1312px;
+            height:60px;
+            border-bottom: 1px solid rgba(177, 171, 171, 0.58);
+            margin-left: 100px;
+            position:sticky;
+            top:100px;
+            background-color: white;
+        }
+        .two{
+            display:flex;
+        }
+        .two1{
+            margin-left: 100px;
+            width: 230px;
+            
+        }
+        .two2{
+            margin-left: 50px;
+        }
+        .one1{
+            width:1000px ;
+            height: 350px;
+            border-bottom: #111212;
+            box-shadow:1px 1px 2px rgba(121, 120, 120, 0.765) ;
+            
+        }
+        .two1 p:hover{
+            text-decoration: 2px underline red;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .three1 p:hover{
+            color:rgba(255, 0, 47, 0.874);
+            transition: all 1s ease;
+        }
+        .fa-brands:hover{
+            color:cornflowerblue;
+            transition: all 1s ease;
+        }
+        .three2 .input:hover{
+            border: 1px solid orange;
+        }
+        .input{
+            border:1px solid rgba(143, 138, 138, 0)
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.svg" class="img1" alt="meals">
+        <p>deliver to:</p>
+        <select class="dropdown">
+            <option>hyderabad</option>
+            <option>mumbai</option>
+            <option>kolkata</option>
+            <option>delhi</option>
+            <option>bengulur</option>
+            <option>chenni</option>
+            <option>andhra pradesh</option>
+        </select>
+        <button class="magnify">
+            <i class="fas fa-magnifying-glass" style="color: #111212;"></i>
+            search
+        </button>
+        <button class="offer" style="margin-left: 20px;">offers</button>
+        <button class="phone" style="width: 50px; margin-left: 20px;">
+            <i class="fa-solid fa-phone"></i>
+        </button>
+        <button class="user" style="width: 50px; margin-left: 20px;">
+            <i class="fas fa-user-plus"></i>
+        </button>
+        <button class="cart" style="height: 40px; width: 60px; margin-left: 20px; background-color: rgba(209, 206, 206, 0.242); border-radius: 0;">
+            <i class="fas fa-cart-shopping"></i>
+        </button>
+    </header>
+    <div>
+        <img src="fast1.jpeg" style="margin-left: 110px; margin-top:150px; width: 600px; " alt="meals">
+        <img src="fast2.jpeg" style="width: 600px;"alt="meals">
+    </div>
+    <div class="one">
+        <p style="margin-top:24px; font-size:20px; margin-left: 0;">CATEGORIES</p>
+        <button class="veg" style="margin-left: 850px; border:1px solid black; height:30px; margin-top: 20px;">VEG</button>
+        <button style="border:1px solid black; margin-left: 15px; height:30px;margin-top: 20px;">PRICE</button>
+        <i class="fas fa-filter" style="color: rgb(144, 139, 139); margin-top: 22px; font-size: 24px; margin-left: 15px;"></i>
+        <button style="font-size: 17px; margin-top:23px; height: 20px;">FILTERS</button>
+    </div>
+    <div class="two">
+        <div class="two1" >
+            <p>Bowls</p>
+            <p>Korean Bowls</p>
+            <p>Burrito Bowls</p>
+            <p>Asian Bowls</p>
+            <p>Super Bowls</p>
+            <p>High Protein XL Bowls</p>
+            <p>All day breakfast</p>
+            <p>Omelettes</p>
+            <p>Gourmet sandwiches</p>
+            <p>Sandwiches and Wraps</p>
+            <p>Crispy Fried Chicken</p>
+            <p>Desserts and Beverages</p>
+            <p>High Protein Plates</p>
+            <p>Keto and Salads</p>
+            <p>Burgers</p>
+            <p>Appetizers</p>
+        </div>
+        <div class="two2">
+            <h1 style=" margin-top: 30px;">Bowls</h1>
+            <div class="one1">
+                <div>
+                    <img src="veg.webp" width="15px" height="15px" alt="meals" style="position: absolute; top:750px;left:400px">
+                    <p style="position: absolute; top:715px;left:380px;font-size:13px">CONTINENTAL</p>
+                    <img src="veg.webp" width="15px" height="15px" alt="meals" style="position: absolute; top:750px;left:740px">
+                    <p style="position: absolute; top:715px;left:720px;font-size:13px">NORTH ASIAN</p>
+                    <img src="non-veg.jpg" width="15px" height="15px" alt="meals" style="position: absolute; top:750px;left:1070px">
+                    <p style="position: absolute; top:715px;left:1050px;font-size:13px">CONTINENTAL</p>
+                </div>
+                
+                <a href="meal1.html"><img class="image" src="meal.jpg" width="300px" height="200px" alt="meals" style=" margin-left:15px;margin-top: 50px;border-radius: 10px;" ></a>
+                <a href="meal2.html"><img src="meal1.jpg" width="300px" height="200px" alt="meals" style="margin-left: 30px; border-radius: 10px;" ></a>
+                <a href="meal3.html"><img src="meal3.png" width="300px" height="200px" alt="meals" style="margin-left: 30px;border-radius: 10px;"></a>
+                <div style="display: flex; position: absolute; top: 950px;">
+                    <p style="margin-left: 20px;font-size: 20px;">Burnt Garlic & Basil Fried Rice</p>
+                    <p style="margin-left:75px; font-size: 18px;">All-American BBQ Steak Bowl</p>
+                    <p style="margin-left: 110px;">Peri Peri Parmesan XL Bowl</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">199</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">299</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px;margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+                <div style="position: absolute; top:980px; left:710px">
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">399</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">599</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px;margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+                <div style="position: absolute; top:980px; left:1050px">
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">299</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">399</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px; margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+            </div>
+            <div class="one1" style="margin-top: 50px;">
+                <div>
+                    <img src="non-veg.jpg" width="15px" height="15px" alt="meals" style="position: absolute; top:1150px;left:400px">
+                    <p style="position: absolute; top:1115px;left:380px; font-size:13px">622 cal | Calorie</p>
+                    <img src="non-veg.jpg" width="15px" height="15px" alt="meals" style="position: absolute; top:1150px;left:740px">
+                    <p style="position: absolute; top:1115px;left:720px;font-size:13px">CONTINENTAL</p>
+                    <img src="non-veg.jpg" width="15px" height="15px" alt="meals" style="position: absolute; top:1150px;left:1070px">
+                    <p style="position: absolute; top:1115px;left:1050px;font-size:13px">MEXICAN</p>
+                </div>
+                
+                <a href="meal4.html"><img src="meal7.jpg" width="300px" height="200px" alt="meals" style=" margin-left:15px;margin-top: 50px;border-radius: 10px;" ></a>
+                <a href="meal5.html"><img src="meal5.jpg" width="300px" height="200px" alt="meals" style="margin-left: 30px; border-radius: 10px;" ></a>
+                <a href="meal6.html"><img src="meal6.png" width="300px" height="200px" alt="meals" style="margin-left: 30px;border-radius: 10px;"></a>
+                <div style="display: flex; position: absolute; top: 1350px;">
+                    <p style="margin-left: 20px;font-size: 20px;">The Mafias Meal </p>
+                    <p style="margin-left:190px; font-size: 18px;">Creamy Pesto Chicken Spaghetti</p>
+                    <p style="margin-left: 110px;">Meatball Arrabiata Rice Bowl</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">139</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">249</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px;margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+                <div style="position: absolute; top:1380px; left:710px">
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">199</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">249</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px;margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+                <div style="position: absolute; top:1380px; left:1050px">
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">99</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">249</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px; margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+            </div>
+            <div class="one1" style="margin-top: 50px;">
+                <div>
+                    <img src="non-veg.jpg" width="15px" height="15px" alt="meals" style="position: absolute; top:1550px;left:400px">
+                    <p style="position: absolute; top:1515px;left:380px;font-size:13px">INDIAN</p>
+                    <img src="non-veg.jpg" width="15px" height="15px" alt="meals" style="position: absolute; top:1550px;left:740px">
+                    <p style="position: absolute; top:1515px;left:720px;font-size:13px">CONTINENTAL</p>
+                    <img src="non-veg.jpg" width="15px" height="15px" alt="meals" style="position: absolute; top:1550px;left:1070px">
+                    <p style="position: absolute; top:1515px;left:1050px;font-size:13px">CONTINENTAL</p>
+                </div>
+                
+                <a href="meal7.html"><img src="meal8.png" width="300px" height="200px" alt="meals" style=" margin-left:15px;margin-top: 50px;border-radius: 10px;" ></a>
+                <a href="meal8.html"><img src="meal9.jpg" width="300px" height="200px" alt="meals" style="margin-left: 30px; border-radius: 10px;" ></a>
+                <a href="meal9.html"><img src="meal10.jpg" width="300px" height="200px" alt="meals" style="margin-left: 30px;border-radius: 10px;"></a>
+                <div style="display: flex; position: absolute; top: 1750px;">
+                    <p style="margin-left: 20px;font-size: 17px;">Moroccan Meatball Spaghetti</p>
+                    <p style="margin-left:130px; font-size: 18px;">Creamy Pesto Chicken Spaghetti</p>
+                    <p style="margin-left: 100px;">Roast Chicken in Steakhouse Sauce</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">199</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">299</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px;margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+                <div style="position: absolute; top:1780px; left:710px">
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">399</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">599</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px;margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+                <div style="position: absolute; top:1780px; left:1050px">
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">299</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">399</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px; margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+            </div>
+            <h1 style="margin-top: 30px;">Korean Bowls</h1>
+            <div class="one1" style="margin-top: 20px;">
+                <div>
+                    <img src="non-veg.jpg" width="15px" height="15px" alt="meals" style="position: absolute; top:1990px;left:400px">
+                    <p style="position: absolute; top:1955px;left:380px;font-size:13px">ASIAN</p>
+                    <img src="veg.webp" width="15px" height="15px" alt="meals" style="position: absolute; top:1990px;left:740px">
+                    <p style="position: absolute; top:1955px;left:720px;font-size:13px">ASIAN</p>
+                    <img src="non-veg.jpg" width="15px" height="15px" alt="meals" style="position: absolute; top:1990px;left:1070px">
+                    <p style="position: absolute; top:1955px;left:1050px;font-size:13px">ASIAN</p>
+                </div>
+                
+                <a href="meal10.html"><img src="meal11.jpg" width="300px" height="200px" alt="meals" style=" margin-left:15px;margin-top: 50px;border-radius: 10px;" ></a>
+                <a href="meal11.html"><img src="meal12.jpg" width="300px" height="200px" alt="meals" style="margin-left: 30px; border-radius: 10px;" ></a>
+                <a href="meal12.html"><img src="meal13.jpeg" width="300px" height="200px" alt="meals" style="margin-left: 30px;border-radius: 10px;"></a>
+                <div style="display: flex; position: absolute; top: 2190px;">
+                    <p style="margin-left: 20px;font-size: 17px;">Oyster Bbq Chicken Rice Bowl</p>
+                    <p style="margin-left:120px; font-size: 18px;">Signature Roast Chicken Rice Bowl</p>
+                    <p style="margin-left: 80px;">Roast Chicken in Steakhouse Sauce</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">130</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">199</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px;margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+                <div style="position: absolute; top:2220px; left:710px">
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">160</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">299</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px;margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+                <div style="position: absolute; top:2220px; left:1050px">
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">129</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">249</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px; margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+            </div>
+            <h1 style="margin-top: 30px;">Burrito Bowls</h1>
+            <div class="one1" style="margin-top: 20px;">
+                <div>
+                    <img src="non-veg.jpg" width="15px" height="15px" alt="meals" style="position: absolute; top:2425px;left:400px">
+                    <p style="position: absolute; top:2390px;left:380px;font-size:13px">291 cal | Calorie</p>
+                    <img src="non-veg.jpg" width="15px" height="15px" alt="meals" style="position: absolute; top:2425px;left:740px">
+                    <p style="position: absolute; top:2390px;left:720px;font-size:13px">ASIAN</p>
+                    <img src="non-veg.jpg" width="15px" height="15px" alt="meals" style="position: absolute; top:2425px;left:1070px">
+                    <p style="position: absolute; top:2390px;left:1050px;font-size:13px">MEXICAN</p>
+                </div>
+                
+                <a href="meal13.html"><img src="meal14.jpeg" width="300px" height="200px" alt="meals" style=" margin-left:15px;margin-top: 50px;border-radius: 10px;" ></a>
+                <a href="meal14.html"><img src="meal15.jpg" width="300px" height="200px" alt="meals" style="margin-left: 30px; border-radius: 10px;" ></a>
+                <a href="meal15.html"><img src="meal16.JPG" width="300px" height="200px" alt="meals" style="margin-left: 30px;border-radius: 10px;"></a>
+                <div style="display: flex; position: absolute; top: 2630px;">
+                    <p style="margin-left: 20px;font-size: 17px;">Honey Gochjugaru Korean Chicken Bowl</p>
+                    <p style="margin-left:45px; font-size: 18px;">K-Pop Chicken Noodle Bowl</p>
+                    <p style="margin-left: 125px;">Korean BBQ Noodle Bowl</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">199</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">299</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px;margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+                <div style="position: absolute; top:2655px; left:710px">
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">399</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">599</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px;margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+                <div style="position: absolute; top:2655px; left:1050px">
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">299</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">399</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px; margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+            </div>
+            <div class="one1" style="margin-top: 50px;">
+                <div>
+                    <img src="non-veg.jpg" width="15px" height="15px" alt="meals" style="position: absolute; top:2825px;left:400px">
+                    <p style="position: absolute; top:2790px;left:380px;font-size:13px">ASIAN</p>
+                    <img src="non-veg.jpg" width="15px" height="15px" alt="meals" style="position: absolute; top:2825px;left:740px">
+                    <p style="position: absolute; top:2790px;left:720px;font-size:13px">ASIAN</p>
+                    <img src="non-veg.jpg" width="15px" height="15px" alt="meals" style="position: absolute; top:2825px;left:1070px">
+                    <p style="position: absolute; top:2790px;left:1050px; font-size:13px">CONTINENTAL</p>
+                </div>
+                
+                <a href="meal16.html"><img src="meal17.jpeg" width="300px" height="200px" alt="meals" style=" margin-left:15px;margin-top: 50px;border-radius: 10px;" ></a>
+                <a href="meal17.html"><img src="meal18.jpg" width="300px" height="200px" alt="meals" style="margin-left: 30px; border-radius: 10px;" ></a>
+                <a href="meal18.html"><img src="meal19.JPG" width="300px" height="200px" alt="meals" style="margin-left: 30px;border-radius: 10px;"></a>
+                <div style="display: flex; position: absolute; top: 3030px;">
+                    <p style="margin-left: 20px;font-size: 17px;">Signature K-Pop Fried Chicken Bowl</p>
+                    <p style="margin-left:80px; font-size: 18px;">K-Pop Chicken Noodle Bowl</p>
+                    <p style="margin-left: 120px;">Korean BBQ Noodle Bowl</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">149</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">249</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px;margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+                <div style="position: absolute; top:3055px; left:710px">
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">199</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">299</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px;margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+                <div style="position: absolute; top:3055px; left:1050px">
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">199</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">269</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px; margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+            </div>
+            <h1 style="margin-top: 20px">Asian Bowls</h1>
+            <div class="one1" style="margin-top: 30px;">
+                <div>
+                    <img src="veg.webp" width="15px" height="15px" alt="meals" style="position: absolute; top:3260px;left:400px">
+                    <p style="position: absolute; top:3225px;left:380px;font-size:13px">ASIAN</p>
+                    <img src="non-veg.jpg" width="15px" height="15px" alt="meals" style="position: absolute; top:3260px;left:740px">
+                    <p style="position: absolute; top:3225px;left:720px;font-size:13px">ASIAN</p>
+                    <img src="non-veg.jpg" width="15px" height="15px" alt="meals" style="position: absolute; top:3260px;left:1070px">
+                    <p style="position: absolute; top:3225px;left:1050px; font-size:13px">CONTINENTAL</p>
+                </div>
+                
+                <a href="meal19.html"><img src="meal20.jpg" width="300px" height="200px" alt="meals" style=" margin-left:15px;margin-top: 50px;border-radius: 10px;" ></a>
+                <a href="meal20.html"><img src="meal21.jpg" width="300px" height="200px" alt="meals" style="margin-left: 30px; border-radius: 10px;" ></a>
+                <a href="meal21.html"><img src="meal22.jpeg" width="300px" height="200px" alt="meals" style="margin-left: 30px;border-radius: 10px;"></a>
+                <div style="display: flex; position: absolute; top: 3465px;">
+                    <p style="margin-left: 20px;font-size: 17px;">Dragon Fire Egg Fried Rice</p>
+                    <p style="margin-left:140px; font-size: 18px;">Taiwanese Chicken Ramen</p>
+                    <p style="margin-left: 149px;">Manchurian Fried Rice</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">100</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">247</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px;margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+                <div style="position: absolute; top:3495px; left:710px">
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">179</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">299</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px;margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+                <div style="position: absolute; top:3495px; left:1050px">
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">100</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">299</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px; margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+            </div>
+            <h1 style="margin-top: 20px">Superbowl</h1>
+            <div class="one1" style="margin-top: 30px;">
+                <div>
+                    <img src="veg.webp" width="15px" height="15px" alt="meals" style="position: absolute; top:3700px;left:400px">
+                    <p style="position: absolute; top:3665px;left:380px;font-size:13px">ASIAN</p>
+                    <img src="non-veg.jpg" width="15px" height="15px" alt="meals" style="position: absolute; top:3700px;left:740px">
+                    <p style="position: absolute; top:3665px;left:720px;font-size:13px">ASIAN</p>
+                    <img src="veg.webp" width="15px" height="15px" alt="meals" style="position: absolute; top:3700px;left:1070px">
+                    <p style="position: absolute; top:3665px;left:1050px; font-size:13px">CONTINENTAL</p>
+                </div>
+                
+                <a href="meal22.html"><img src="meal23.JPG" width="300px" height="200px" alt="meals" style=" margin-left:15px;margin-top: 50px;border-radius: 10px;" ></a>
+                <a href="meal23.html"><img src="meal24.jpg" width="300px" height="200px" alt="meals" style="margin-left: 30px; border-radius: 10px;" ></a>
+                <a href="meal24.html"><img src="meal25.jpg" width="300px" height="200px" alt="meals" style="margin-left: 30px;border-radius: 10px;"></a>
+                <div style="display: flex; position: absolute; top: 3895px;">
+                    <p style="margin-left: 20px;font-size: 17px;">Mexican Burrito Superbowl</p>
+                    <p style="margin-left:140px; font-size: 18px;">Rooster Chicken Superbowl</p>
+                    <p style="margin-left: 140px;">Paneer Butter Masala Superbowle</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">199</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">399</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px;margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+                <div style="position: absolute; top:3930px; left:710px">
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">130</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">399</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px;margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+                <div style="position: absolute; top:3930px; left:1050px">
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">130</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">399</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px; margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+            </div>
+            <h1 style="margin-top: 20px">High Protein XL Bowls</h1>
+            <div class="one1" style="margin-top: 30px;">
+                <div>
+                    <img src="veg.webp" width="15px" height="15px" alt="meals" style="position: absolute; top:4135px;left:400px">
+                    <p style="position: absolute; top:4100px;left:380px;font-size:13px">INDIAN</p>
+                    <img src="non-veg.jpg" width="15px" height="15px" alt="meals" style="position: absolute; top:4135px;left:740px">
+                    <p style="position: absolute; top:4100px;left:720px;font-size:13px">MEXICAN</p>
+                    <img src="veg.webp" width="15px" height="15px" alt="meals" style="position: absolute; top:4135px;left:1070px">
+                    <p style="position: absolute; top:4100px;left:1050px; font-size:13px">INDIAN</p>
+                </div>
+
+                <a href="meal25.html"><img src="meal26.jpeg" width="300px" height="200px" alt="meals" style=" margin-left:15px;margin-top: 50px;border-radius: 10px;" ></a>
+                <a href="meal26.html"><img src="meal27.jpeg" width="300px" height="200px" alt="meals" style="margin-left: 30px; border-radius: 10px;" ></a>
+                <a href="meal27.html"><img src="meal28.jpeg" width="300px" height="200px" alt="meals" style="margin-left: 30px;border-radius: 10px;"></a>
+                <div style="display: flex; position: absolute; top: 4335px;">
+                    <p style="margin-left: 20px;font-size: 17px;">Double Ghee Roast Paneer XL Bowl</p>
+                    <p style="margin-left:80px; font-size: 18px;">Creamy Cilantro lime XL Buritto</p>
+                    <p style="margin-left: 94px;">Double Paneer Makhani XL Bowl</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">199</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">389</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px;margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+                <div style="position: absolute; top:4365px; left:710px">
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">149</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">269</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px;margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+                <div style="position: absolute; top:4365px; left:1050px">
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">199</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">289</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px; margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+            </div>
+            <h1 style="margin-top: 20px">All day breakfast</h1>
+            <div class="one1" style="margin-top: 30px;">
+                <div>
+                    <img src="veg.webp" width="15px" height="15px" alt="meals" style="position: absolute; top:4570px;left:400px">
+                    <p style="position: absolute; top:4535px;left:380px;font-size:13px">INDIAN</p>
+                    <img src="non-veg.jpg" width="15px" height="15px" alt="meals" style="position: absolute; top:4570px;left:740px">
+                    <p style="position: absolute; top:4535px;left:720px;font-size:13px">MEXICAN</p>
+                    <img src="veg.webp" width="15px" height="15px" alt="meals" style="position: absolute; top:4570px;left:1070px">
+                    <p style="position: absolute; top:4535px;left:1050px; font-size:13px">INDIAN</p>
+                </div>
+
+                <a href="meal28.html"><img src="meal29.jpeg" width="300px" height="200px" alt="meals" style=" margin-left:15px;margin-top: 50px;border-radius: 10px;" ></a>
+                <a href="meal29.html"><img src="meal30.jpeg" width="300px" height="200px" alt="meals" style="margin-left: 30px; border-radius: 10px;" ></a>
+                <a href="meal30.html"><img src="meal31.jpg" width="300px" height="200px" alt="meals" style="margin-left: 30px;border-radius: 10px;"></a>
+                <div style="display: flex; position: absolute; top: 4770px;">
+                    <p style="margin-left: 20px;font-size: 17px;">The Muscle Multiplier</p>
+                    <p style="margin-left:180px; font-size: 18px;">Creamy Eggs n Chicken Brekkie</p>
+                    <p style="margin-left: 94px;">Spicy Herbed Chicken Farmer's Breakfast</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">149</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">289</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px;margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+                <div style="position: absolute; top:4800px; left:710px">
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">199</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">369</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px;margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+                <div style="position: absolute; top:4800px; left:1050px">
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">130</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">249</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px; margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+            </div>
+            <div class="one1" style="margin-top: 30px;">
+                <div>
+                    <img src="non-veg.jpg" width="15px" height="15px" alt="meals" style="position: absolute; top:4950px;left:400px">
+                    <p style="position: absolute; top:4915px;left:380px;font-size:13px">CONTINENTAL</p>
+                    <img src="non-veg.jpg" width="15px" height="15px" alt="meals" style="position: absolute; top:4950px;left:740px">
+                    <p style="position: absolute; top:4915px;left:720px;font-size:13px">CONTINENTAL</p>
+                    <img src="veg.webp" width="15px" height="15px" alt="meals" style="position: absolute; top:4950px;left:1070px">
+                    <p style="position: absolute; top:4915px;left:1050px; font-size:13px">CONTINENTAL</p>
+                </div>
+
+                <a href="meal31.html"><img src="meal32.jpg" width="300px" height="200px" alt="meals" style=" margin-left:15px;margin-top: 50px;border-radius: 10px;" ></a>
+                <a href="meal32.html"><img src="meal33.JPG" width="300px" height="200px" alt="meals" style="margin-left: 30px; border-radius: 10px;" ></a>
+                <a href="meal33.html"><img src="meal34.jpg" width="300px" height="200px" alt="meals" style="margin-left: 30px;border-radius: 10px;"></a>
+                <div style="display: flex; position: absolute; top: 5150px;">
+                    <p style="margin-left: 20px;font-size: 17px;">Veggie Harvest Breakfast</p>
+                    <p style="margin-left:155px; font-size: 18px;">Paneer Power Breakfast</p>
+                    <p style="margin-left: 170px;">DSpicy Sausage Farmer's Breakfast</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">299</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">399</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px;margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+                <div style="position: absolute; top:5180px; left:710px">
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">199</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">269</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px;margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+                <div style="position: absolute; top:5180px; left:1050px">
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">199</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">299</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px; margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+            </div>
+            <h1 style="margin-top: 20px">Omelettes</h1>
+            <div class="one1" style="margin-top: 30px;">
+                <div>
+                    <img src="veg.webp" width="15px" height="15px" alt="meals" style="position: absolute; top:5390px;left:400px">
+                    <p style="position: absolute; top:5355px;left:380px;font-size:13px">CONTINENTAL</p>
+                    <img src="non-veg.jpg" width="15px" height="15px" alt="meals" style="position: absolute; top:5390px;left:740px">
+                    <p style="position: absolute; top:5355px;left:720px;font-size:13px">CONTINENTAL</p>
+                    <img src="veg.webp" width="15px" height="15px" alt="meals" style="position: absolute; top:5390px;left:1070px">
+                    <p style="position: absolute; top:5355px;left:1050px; font-size:13px">CONTINENTAL</p>
+                </div>
+
+                <a href="meal34.html"><img src="meal35.jpg" width="300px" height="200px" alt="meals" style=" margin-left:15px;margin-top: 50px;border-radius: 10px;" ></a>
+                <a href="meal35.html"><img src="meal36.jpg" width="300px" height="200px" alt="meals" style="margin-left: 30px; border-radius: 10px;" ></a>
+                <a href="meal36.html"><img src="meal37.jpeg" width="300px" height="200px" alt="meals" style="margin-left: 30px;border-radius: 10px;"></a>
+                <div style="display: flex; position: absolute; top: 5590px;">
+                    <p style="margin-left: 20px;font-size: 17px;">Creamy Chicken Omelette</p>
+                    <p style="margin-left:150px; font-size: 18px;">High-Protein Chicken Omelette</p>
+                    <p style="margin-left: 100px;">Tomato & Cheese Omelette</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">100</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">299</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px;margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+                <div style="position: absolute; top:5620px; left:710px">
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">119</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">249</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px;margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+                <div style="position: absolute; top:5620px; left:1050px">
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">179</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">389</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px; margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+            </div>
+            <h1 style="margin-top: 20px">Gourmet sandwiches</h1>
+            <div class="one1" style="margin-top: 30px;">
+                <div>
+                    <img src="veg.webp" width="15px" height="15px" alt="meals" style="position: absolute; top:5825px;left:400px">
+                    <p style="position: absolute; top:5790px;left:380px;font-size:13px">CONTINENTAL</p>
+                    <img src="veg.webp" width="15px" height="15px" alt="meals" style="position: absolute; top:5825px;left:740px">
+                    <p style="position: absolute; top:5790px;left:720px;font-size:13px">CONTINENTAL</p>
+                    <img src="veg.webp" width="15px" height="15px" alt="meals" style="position: absolute; top:5825px;left:1070px">
+                    <p style="position: absolute; top:5790px;left:1050px; font-size:13px">CONTINENTAL</p>
+                </div>
+
+                <img src="meal38.jpeg" width="300px" height="200px" alt="meals" style=" margin-left:15px;margin-top: 50px;border-radius: 10px;" >
+                <img src="meal39.jpg" width="300px" height="200px" alt="meals" style="margin-left: 30px; border-radius: 10px;" >
+                <img src="meal40.jpeg" width="300px" height="200px" alt="meals" style="margin-left: 30px;border-radius: 10px;">
+                <div style="display: flex; position: absolute; top: 6030px;">
+                    <p style="margin-left: 20px;font-size: 17px;">Grilled Cheese Sandwiches </p>
+                    <p style="margin-left:150px; font-size: 18px;">Gourmet Deli sandwiches</p>
+                    <p style="margin-left: 144px;">Tonkatsu</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">199</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">299</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px;margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+                <div style="position: absolute; top:6055px; left:710px">
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">100</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">249</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px;margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+                <div style="position: absolute; top:6055px; left:1050px">
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">120</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">269</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px; margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+            </div>
+            <h1 style="margin-top: 20px">Sandwiches and Wraps</h1>
+            <div class="one1" style="margin-top: 30px;">
+                <div>
+                    <img src="veg.webp" width="15px" height="15px" alt="meals" style="position: absolute; top:6260px;left:400px">
+                    <p style="position: absolute; top:6225px;left:380px;font-size:13px">CONTINENTAL</p>
+                    <img src="veg.webp" width="15px" height="15px" alt="meals" style="position: absolute; top:6260px;left:740px">
+                    <p style="position: absolute; top:6225px;left:720px;font-size:13px">CONTINENTAL</p>
+                    <img src="veg.webp" width="15px" height="15px" alt="meals" style="position: absolute; top:6260px;left:1070px">
+                    <p style="position: absolute; top:6225px;left:1050px; font-size:13px">CONTINENTAL</p>
+                </div>
+
+                <a href="meal37.html"><img src="meal41.jpeg" width="300px" height="200px" alt="meals" style=" margin-left:15px;margin-top: 50px;border-radius: 10px;" ></a>
+                <a href="meal38.html"><img src="meal42.jpg" width="300px" height="200px" alt="meals" style="margin-left: 30px; border-radius: 10px;" ></a>
+                <a href="meal39.html"><img src="meal43.jpg" width="300px" height="200px" alt="meals" style="margin-left: 30px;border-radius: 10px;"></a>
+                <div style="display: flex; position: absolute; top: 6460px;">
+                    <p style="margin-left: 20px;font-size: 17px;">Eggs n pepper Sandwich </p>
+                    <p style="margin-left:165px; font-size: 18px;">Peri Peri Paneer Wrap</p>
+                    <p style="margin-left: 175px;">Kolkata Paneer Wrap</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">140</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">299</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px;margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+                <div style="position: absolute; top:6490px; left:710px">
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">120</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">249</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px;margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+                <div style="position: absolute; top:6490px; left:1050px">
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">249</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">389</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px; margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+            </div>
+            <div class="one1" style="margin-top: 30px;">
+                <div>
+                    <img src="non-veg.jpg" width="15px" height="15px" alt="meals" style="position: absolute; top:6640px;left:400px">
+                    <p style="position: absolute; top:6605px;left:380px;font-size:13px">ASIAN</p>
+                    <img src="veg.webp" width="15px" height="15px" alt="meals" style="position: absolute; top:6640px;left:740px">
+                    <p style="position: absolute; top:6605px;left:720px;font-size:13px">CONTINENTAL</p>
+                    <img src="veg.webp" width="15px" height="15px" alt="meals" style="position: absolute; top:6640px;left:1070px">
+                    <p style="position: absolute; top:6605px;left:1050px; font-size:13px">CONTINENTAL</p>
+                </div>
+
+                <a href="meal40.html"><img src="meal44.jpg" width="300px" height="200px" alt="meals" style=" margin-left:15px;margin-top: 50px;border-radius: 10px;" ></a>
+                <a href="meal41.html"><img src="meal45.jpg" width="300px" height="200px" alt="meals" style="margin-left: 30px; border-radius: 10px;" ></a>
+                <a href="meal42.html"><img src="meal46.jpeg" width="300px" height="200px" alt="meals" style="margin-left: 30px;border-radius: 10px;"></a>
+                <div style="display: flex; position: absolute; top: 6840px;">
+                    <p style="margin-left: 20px;font-size: 17px;">Smokey Chicken and Cheese Sandwich</p>
+                    <p style="margin-left:60px; font-size: 18px;">Cheese Melt Paneer Wrap</p>
+                    <p style="margin-left: 155px;">Smashed Eggs n Chicken Sandwich</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">130</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">299</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px;margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+                <div style="position: absolute; top:6870px; left:710px">
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">160</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">249</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px;margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+                <div style="position: absolute; top:6870px; left:1050px">
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">179</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">289</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px; margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+            </div>
+            <h1 style="margin-top: 20px">Crispy Fried Chicken</h1>
+            <div class="one1" style="margin-top: 30px;">
+                <div>
+                    <img src="non-veg.jpg" width="15px" height="15px" alt="meals" style="position: absolute; top:7075px;left:400px">
+                    <p style="position: absolute; top:7040px;left:380px;font-size:13px">ASIAN</p>
+                    <img src="non-veg.jpg" width="15px" height="15px" alt="meals" style="position: absolute; top:7075px;left:740px">
+                    <p style="position: absolute; top:7040px;left:720px;font-size:13px">CONTINENTAL</p>
+                    <img src="non-veg.jpg" width="15px" height="15px" alt="meals" style="position: absolute; top:7075px;left:1070px">
+                    <p style="position: absolute; top:7040px;left:1050px; font-size:13px">CONTINENTAL</p>
+                </div>
+
+                <a href="meal43.html"><img src="meal47.jpeg" width="300px" height="200px" alt="meals" style=" margin-left:15px;margin-top: 50px;border-radius: 10px;" ></a>
+                <a href="meal44.html"><img src="meal48.jpeg" width="300px" height="200px" alt="meals" style="margin-left: 30px; border-radius: 10px;" ></a>
+                <a href="meal45.html"><img src="meal49.jpeg" width="300px" height="200px" alt="meals" style="margin-left: 30px;border-radius: 10px;"></a>
+                <div style="display: flex; position: absolute; top: 7275px;">
+                    <p style="margin-left: 20px;font-size: 17px;">Tex Mex Ch-achos</p>
+                    <p style="margin-left:205px; font-size: 18px;">CLoaded Tikka Chachos</p>
+                    <p style="margin-left: 155px;">Chicken Parmigiana</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">100</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">299</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px;margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+                <div style="position: absolute; top:7305px; left:710px">
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">119</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">249</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px;margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+                <div style="position: absolute; top:7305px; left:1050px">
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">179</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">389</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px; margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+            </div>
+            <h1 style="margin-top: 20px">Desserts and Beverages</h1>
+            <div class="one1" style="margin-top: 30px;">
+                <div>
+                    <img src="veg.webp" width="15px" height="15px" alt="meals" style="position: absolute; top:7510px;left:400px">
+                    <p style="position: absolute; top:7475px;left:380px;font-size:13px">ASIAN</p>
+                    <img src="veg.webp" width="15px" height="15px" alt="meals" style="position: absolute; top:7510px;left:740px">
+                    <p style="position: absolute; top:7475px;left:720px;font-size:13px">CONTINENTAL</p>
+                    <img src="veg.webp" width="15px" height="15px" alt="meals" style="position: absolute; top:7510px;left:1070px">
+                    <p style="position: absolute; top:7475px;left:1050px; font-size:13px">CONTINENTAL</p>
+                </div>
+
+                <a href="meal46.html"><img src="meal50.JPG" width="300px" height="200px" alt="meals" style=" margin-left:15px;margin-top: 50px;border-radius: 10px;" ></a>
+                <a href="meal47.html"><img src="meal51.jpg" width="300px" height="200px" alt="meals" style="margin-left: 30px; border-radius: 10px;" ></a>
+                <a href="meal48.html"><img src="meal52.JPG" width="300px" height="200px" alt="meals" style="margin-left: 30px;border-radius: 10px;"></a>
+                <div style="display: flex; position: absolute; top: 7715px;">
+                    <p style="margin-left: 20px;font-size: 17px;">Dutch Truffle Cake</p>
+                    <p style="margin-left:200px; font-size: 18px;">Mint Lemonade</p>
+                    <p style="margin-left: 220px;">Crumble-Blueberry-Cake</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">89</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">199</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px;margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 120px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+                <div style="position: absolute; top:7740px; left:710px">
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">39</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">69</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px;margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 115px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+                <div style="position: absolute; top:7740px; left:1050px">
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">89</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">149</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px; margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 120px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+            </div>
+            <h1 style="margin-top: 20px">High Protein Plates</h1>
+            <div class="one1" style="margin-top: 30px;">
+                <div>
+                    <img src="non-veg.jpg" width="15px" height="15px" alt="meals" style="position: absolute; top:7950px;left:400px">
+                    <p style="position: absolute; top:7915px;left:380px;font-size:13px">ASIAN</p>
+                    <img src="veg.webp" width="15px" height="15px" alt="meals" style="position: absolute; top:7950px;left:740px">
+                    <p style="position: absolute; top:7915px;left:720px;font-size:13px">CONTINENTAL</p>
+                    <img src="veg.webp" width="15px" height="15px" alt="meals" style="position: absolute; top:7950px;left:1070px">
+                    <p style="position: absolute; top:7915px;left:1050px; font-size:13px">CONTINENTAL</p>
+                </div>
+
+                <a href="meal49.html"><img src="meal53.jpeg" width="300px" height="200px" alt="meals" style=" margin-left:15px;margin-top: 50px;border-radius: 10px;" ></a>
+                <a href="meal50.html"><img src="meal54.jpeg" width="300px" height="200px" alt="meals" style="margin-left: 30px; border-radius: 10px;" ></a>
+                <a href="meal51.html"><img src="meal55.jpeg" width="300px" height="200px" alt="meals" style="margin-left: 30px;border-radius: 10px;"></a>
+                <div style="display: flex; position: absolute; top: 8150px;">
+                    <p style="margin-left: 20px;font-size: 17px;">Chicken Tikka Egg Scramble Protein Plate</p>
+                    <p style="margin-left:40px; font-size: 18px;">PeriPeri Eggs Protein Plate</p>
+                    <p style="margin-left: 140px;">Salad Eggs Protein Plate</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">179</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">349</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px;margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+                <div style="position: absolute; top:8180px; left:710px">
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">99</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">249</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px;margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 22px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+                <div style="position: absolute; top:8180px; left:1050px">
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">169</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">269</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px; margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+            </div>
+            <h1 style="margin-top: 20px">Keto and Salads</h1>
+            <div class="one1" style="margin-top: 30px;">
+                <div>
+                    <img src="veg.webp" width="15px" height="15px" alt="meals" style="position: absolute; top:8385px;left:400px">
+                    <p style="position: absolute; top:8350px;left:380px;font-size:13px">CONTINENTAL</p>
+                    <img src="non-veg.jpg" width="15px" height="15px" alt="meals" style="position: absolute; top:8385px;left:740px">
+                    <p style="position: absolute; top:8350px;left:720px;font-size:13px">444 cal | Low Calorie</p>
+                    <img src="non-veg.jpg" width="15px" height="15px" alt="meals" style="position: absolute; top:8385px;left:1070px">
+                    <p style="position: absolute; top:8350px;left:1050px; font-size:13px">CONTINENTAL</p>
+                </div>
+
+                <a href="meal52.html"><img src="meal56.jpg" width="300px" height="200px" alt="meals" style=" margin-left:15px;margin-top: 50px;border-radius: 10px;" ></a>
+                <a href="meal53.html"><img src="meal57.jpg" width="300px" height="200px" alt="meals" style="margin-left: 30px; border-radius: 10px;" ></a>
+                <a href="meal54.html"><img src="meal58.png" width="300px" height="200px" alt="meals" style="margin-left: 30px;border-radius: 10px;"></a>
+                <div style="display: flex; position: absolute; top: 8590px;">
+                    <p style="margin-left: 20px;font-size: 17px;">Mexican Paneer Pomo Salad</p>
+                    <p style="margin-left:135px; font-size: 18px;">Keto Peri Peri Grilled Chicken Steak</p>
+                    <p style="margin-left: 70px;">Grilled Keto Chicken Steak with Greens</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">140</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">249</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px;margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+                <div style="position: absolute; top:8615px; left:710px">
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">179</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">269</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px;margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 22px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+                <div style="position: absolute; top:8615px; left:1050px">
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">169</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">269</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px; margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+            </div>
+            <h1 style="margin-top: 20px">Burgers</h1>
+            <div class="one1" style="margin-top: 30px;">
+                <div>
+                    <img src="veg.webp" width="15px" height="15px" alt="meals" style="position: absolute; top:8820px;left:400px">
+                    <p style="position: absolute; top:8785px;left:380px;font-size:13px">CONTINENTAL</p>
+                    <img src="non-veg.jpg" width="15px" height="15px" alt="meals" style="position: absolute; top:8820px;left:740px">
+                    <p style="position: absolute; top:8785px;left:720px;font-size:13px">MEXICAN</p>
+                    <img src="non-veg.jpg" width="15px" height="15px" alt="meals" style="position: absolute; top:8820px;left:1070px">
+                    <p style="position: absolute; top:8785px;left:1050px; font-size:13px">CONTINENTAL</p>
+                </div>
+
+                <a href="meal55.html"><img src="meal59.JPG" width="300px" height="200px" alt="meals" style=" margin-left:15px;margin-top: 50px;border-radius: 10px;" ></a>
+                <a href="meal56.html"><img src="meal60.JPG" width="300px" height="200px" alt="meals" style="margin-left: 30px; border-radius: 10px;" ></a>
+                <a href="meal57.html"><img src="meal61.JPG" width="300px" height="200px" alt="meals" style="margin-left: 30px;border-radius: 10px;"></a>
+                <div style="display: flex; position: absolute; top: 9020px;">
+                    <p style="margin-left: 20px;font-size: 17px;">Schnitzel Supreme Burger</p>
+                    <p style="margin-left:155px; font-size: 18px;">Californian Double Chicken Burger</p>
+                    <p style="margin-left: 75px;">Herbed Chicken & Mushroom Burger</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">140</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">249</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px;margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+                <div style="position: absolute; top:9050px; left:710px">
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">160</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">269</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px;margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 22px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+                <div style="position: absolute; top:9050px; left:1050px">
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">140</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">249</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px; margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+            </div>
+            <h1 style="margin-top: 20px">Appetizers</h1>
+            <div class="one1" style="margin-top: 30px;">
+                <div>
+                    <img src="veg.webp" width="15px" height="15px" alt="meals" style="position: absolute; top:9260px;left:400px">
+                    <p style="position: absolute; top:9224px;left:380px;font-size:13px">ASIAN</p>
+                    <img src="veg.webp" width="15px" height="15px" alt="meals" style="position: absolute; top:9255px;left:740px">
+                    <p style="position: absolute; top:9220px;left:720px;font-size:13px">ASIAN</p>
+                    <img src="veg.webp" width="15px" height="15px" alt="meals" style="position: absolute; top:9255px;left:1070px">
+                    <p style="position: absolute; top:9220px;left:1050px; font-size:13px">PAN-ASIAN</p>
+                </div>
+
+                <a href="meal58.html"><img src="meal62.jpeg" width="300px" height="200px" alt="meals" style=" margin-left:15px;margin-top: 50px;border-radius: 10px;" ></a>
+                <a href="meal59.html"><img src="meal63.jpg" width="300px" height="200px" alt="meals" style="margin-left: 30px; border-radius: 10px;" ></a>
+                <a href="meal60.html"><img src="meal64.JPG" width="300px" height="200px" alt="meals" style="margin-left: 30px;border-radius: 10px;"></a>
+                <div style="display: flex; position: absolute; top: 9460px;">
+                    <p style="margin-left: 20px;font-size: 17px;">Chilli Potato</p>
+                    <p style="margin-left:245px; font-size: 18px;">Honey Chili Garlic Potato</p>
+                    <p style="margin-left: 150px;">Crispy Fried American Corn</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">249</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">399</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px;margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+                <div style="position: absolute; top:9490px; left:710px">
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">89</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">249</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px;margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 22px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+                <div style="position: absolute; top:9490px; left:1050px">
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:20px; margin-top: 30px; color: rgba(0, 0, 0, 0.68);">100</i>
+                    <i class="fa-solid fa-indian-rupee-sign" style="margin-left:2px; margin-top: 30px; color: rgba(144, 142, 142, 0.55); text-decoration: line-through;">199</i>
+                    <button style="width: 120px;height: 40px; background: linear-gradient(90deg,rgba(243, 178, 59, 0.765) 50%,rgb(255, 170, 11));border-radius: 20px;color: white; margin-left: 90px; margin-top: 30px;">ADD<sup>+</sup></button>
+                    <div style="display: flex;">
+                        <p style="margin-top: 0px; margin-left: 24px; font-size: 17px;">40% OFF</p>
+                        <p style="margin-top: 0px; margin-left: 130px; font-size: 13px;">Customisable</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br><br><br><br><br><br><br><hr style="height: 0.5px;background-color: rgba(205, 202, 202, 0.416);">
+    <div style="display:flex; color: rgba(172, 166, 166, 0.817);">
+        <div style="width:150px; height: 250px;margin-left:50px; " class="three1">
+            <p style="font-size: 18px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color:rgba(173, 166, 166, 0.831)">company</p>
+            <p>FAQ</p>
+            <p>About</p>
+            <p>Careers</p>
+            <p>Blog</p>
+        </div>
+        <div style="width:200px; height:250px;margin-left:20px;" class="three1">
+            <p style="font-size: 18px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color:rgba(173, 166, 166, 0.831)">Help & Contact</p>
+            <p><i class="fa-solid fa-phone"></i>080-0420-9890</p>
+            <p><i class="fa-regular fa-envelope"></i>Email us</p>
+        </div>
+        <div style="width:200px; height:250px; margin-left:20px;" class="three1">
+            <p style="font-size: 20px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color:rgba(173, 166, 166, 0.831)">more from us</p>
+            <p>bulk/party orders</p>
+            <p>cake order</p>
+            <p>Freshclub</p>
+            <p>offers</p>
+        </div>
+        <div style="width:500px; height:250px; margin-left:250px;" class="three2">
+            <p style="margin-left: 30px;">Subscribe to our droolworthy newsletter</p>
+            <input class="input" type="email" placeholder="Enter your Email" style="width:423px;height:40px;margin-left:30px;border-radius:5px;background-color: rgba(223, 218, 218, 0.422);"><br><br><br><br><br>
+            <img src="google.jpg" width="150px" height="40px" style="margin-left: 30px;" alt="hello">
+            <img src="google1.svg" width="150px" height="40px" alt="hi">
+            <i class="fa-brands fa-facebook" style="font-size: 25px; margin-left: 15px; position: absolute; top:9925px;left:1220px"></i>
+            <i class="fa-brands fa-twitter" style="font-size: 25px; margin-left: 5px; position: absolute; top:9925px;left:1270px"></i>
+            <i class="fa-brands fa-square-instagram" style="font-size: 25px; margin-left: 5px; position: absolute; top:9925px;left:1310px"></i>
+        </div> 
+          
+    </div><br><br><br>
+    <label style="margin-left: 90px; font-size: 17px; text-decoration: bold;">Terms </label>
+    <label style="margin-left:30px;font-size: 17px; text-decoration: bold;">Privacy</label> <br><br>
+    <div style="background-color: rgba(9, 9, 9, 0.74); width: 100%; height: 350px; display: flex;">
+        <div style="width:150px;height: 200px;margin-left: 50px; display: flow-root;  color: white;">
+            <h4 style="margin-top: 25px;">CATEGORIES</h4><br>
+            <label style="margin-left: 15px; color: rgb(133, 132, 132);">Mains</label><br><br>
+            <label style="margin-left: 15px; color: rgb(133, 132, 132);">Pizzas</label><br><br>
+            <label style="margin-left: 15px; color: rgb(133, 132, 132);">Salds</label><br><br>
+            <label style="margin-left: 15px; color: rgb(133, 132, 132);">Desserts</label><br><br>
+            <label style="margin-left: 15px; color: rgb(133, 132, 132);">Quickbites</label>
+        </div>
+        <div style="width:150px;height: 200px;margin-left: 80px; display: flow-root;  color: white;">
+            <h4 style="margin-top: 25px;">CUISINES</h4><br>
+            <label style="margin-left: 15px; color: rgb(133, 132, 132);">Indian</label><br><br>
+            <label style="margin-left: 15px; color: rgb(133, 132, 132);">Chinese</label><br><br>
+            <label style="margin-left: 15px; color: rgb(133, 132, 132);">Italian</label><br><br>
+            <label style="margin-left: 15px; color: rgb(133, 132, 132);">American</label><br><br>
+            
+        </div>
+        <div style="width:150px;height: 200px;margin-left: 10px; display: flow-root;  color: white;margin-top: 80px;">
+            
+            <label style="margin-left: 15px; color: rgb(133, 132, 132);">Mexican</label><br><br>
+            <label style="margin-left: 15px; color: rgb(133, 132, 132);">Thai</label><br><br>
+            <label style="margin-left: 15px; color: rgb(133, 132, 132);">Continental</label><br><br>
+            <label style="margin-left: 15px; color: rgb(133, 132, 132);">Mediterranean</label><br><br>
+            
+        </div>
+    </div>
+</body>
+</html>
